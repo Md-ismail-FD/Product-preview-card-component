@@ -1,6 +1,13 @@
 # Frontend Mentor - Product preview card component
 
-![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
+
+screenshoret
+
+![perfume](https://github.com/user-attachments/assets/29c6a1b2-1e29-40ad-be32-7cfc27cad89e)
+
+![pre](https://github.com/user-attachments/assets/893d12de-b7fd-42ef-856e-6645f2a5a6fb)
+
+
 
 ## Welcome! 👋
 
