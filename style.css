@@ -1,0 +1,161 @@
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root{
+--primary: "Montserrat", sans-serif;
+--secondary:  "Fraunces", serif; 
+  --Darkcyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --VeryDarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+} 
+
+html,body{
+  height: 100%;
+}
+.parent{
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300px;
+  background-color: var(--Cream);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 700px;
+  font-family: "Fraunces", serif; 
+  margin-bottom: 15px
+}
+p{
+  font-weight: 300px;
+  margin-bottom: 15px;
+}
+img{
+  max-width: 100%;
+}
+.conteinar{
+  width: 600px;
+display: flex;
+}
+.left{
+flex-basis: 50%;
+}
+.left img.dekstop{
+border-radius: 10px 0 0 10px;
+display: block;
+}
+.left img.mobail{
+border-radius: 10px 10px 0 0;
+display: none;
+}
+.right{
+  flex-basis:50%;
+  background-color: var(--White );
+  padding: 30px;
+  border-radius: 0 10px 10px 0;
+}
+
+.right h6{
+  font-family: var(--primary);
+ color: var(--Darkgrayishblue);
+ letter-spacing: 5px;
+ font-size: 12px;
+ font-weight: normal;
+}
+
+.right h2{
+ font-family: var(--secondary);
+ font-size: 32px;
+ font-weight: 700px;
+ margin-bottom: 26px;
+}
+
+.right p{
+ font-family: var(--primary);
+ font-size: 14px;
+ font-weight: 500px;
+ margin-bottom: 33px;
+
+}
+.right p.price{
+font-family: var(--secondary);
+font-size: 32px;
+color: var(--Darkcyan);
+font-weight: bolder;
+margin-bottom: 26px;
+ 
+}
+
+.right p.price span{
+color: var(--Darkgrayishblue);
+font-family: var(--primary);
+font-size: 14px;
+position: relative;
+ top: -5px;
+ text-decoration: line-through;
+ font-weight:normal;
+ margin-left: 15px;
+
+
+
+}
+
+.right button {
+
+background-color: var(--Darkcyan);
+border: none;
+width: 100%;
+padding: 15px;
+border-radius: 10px;
+color: var(--White);
+
+}
+
+.right button img {
+
+position: relative;
+top: 2px;
+padding-right: 10px;
+
+
+}
+/* Responsive */
+
+@media only screen and (max-width:600px) {
+.parent{
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+  .conteinar{
+    width: 90%;
+   flex-direction: column;
+   margin-top: 20px;
+  }
+
+.left img.dekstop{
+border-radius: 10px 0 0 10px;
+display: none;
+}
+.left img.mobail{
+border-radius: 10px 10px 0 0;
+display: block;
+}
+
+.right{
+
+  border-radius: 0 0 10px 10px;
+}
+
+}
